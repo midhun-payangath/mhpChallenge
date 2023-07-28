@@ -28,6 +28,9 @@
 		52337F982A73DDAF00F4DBD5 /* HouseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F972A73DDAF00F4DBD5 /* HouseDetailViewModel.swift */; };
 		52337F9A2A73DE0B00F4DBD5 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F992A73DE0B00F4DBD5 /* Extension+String.swift */; };
 		52337F9D2A73DFE300F4DBD5 /* Enum+PropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F9C2A73DFE300F4DBD5 /* Enum+PropertyView.swift */; };
+		52337FA22A73F4D300F4DBD5 /* HousesStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = 52337FA12A73F4D300F4DBD5 /* HousesStatic.json */; };
+		52337FA42A73F52E00F4DBD5 /* MockGOTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337FA32A73F52E00F4DBD5 /* MockGOTService.swift */; };
+		52337FA72A73FA0E00F4DBD5 /* CharacterStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = 52337FA62A73FA0E00F4DBD5 /* CharacterStatic.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		52337F972A73DDAF00F4DBD5 /* HouseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewModel.swift; sourceTree = "<group>"; };
 		52337F992A73DE0B00F4DBD5 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		52337F9C2A73DFE300F4DBD5 /* Enum+PropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum+PropertyView.swift"; sourceTree = "<group>"; };
+		52337FA12A73F4D300F4DBD5 /* HousesStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HousesStatic.json; sourceTree = "<group>"; };
+		52337FA32A73F52E00F4DBD5 /* MockGOTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGOTService.swift; sourceTree = "<group>"; };
+		52337FA62A73FA0E00F4DBD5 /* CharacterStatic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CharacterStatic.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,10 +132,10 @@
 			isa = PBXGroup;
 			children = (
 				52337F792A73C82300F4DBD5 /* Info.plist */,
+				52337F892A73CE0F00F4DBD5 /* Resources */,
 				52337F9E2A73E0AF00F4DBD5 /* Utilities */,
 				52337F9F2A73E0BB00F4DBD5 /* Extensions */,
 				52337FA02A73E0C900F4DBD5 /* Enumerations */,
-				52337F892A73CE0F00F4DBD5 /* Resources */,
 				52337F782A73C7E700F4DBD5 /* Config */,
 				52337F802A73C9BB00F4DBD5 /* Repository */,
 				52337F832A73CD3A00F4DBD5 /* Services */,
@@ -152,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				52337F5B2A73C6B500F4DBD5 /* mhpChallengeTests.swift */,
+				52337FA52A73F91000F4DBD5 /* Mock */,
 			);
 			path = mhpChallengeTests;
 			sourceTree = "<group>";
@@ -206,6 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				52337F4E2A73C6B400F4DBD5 /* Assets.xcassets */,
+				52337FA12A73F4D300F4DBD5 /* HousesStatic.json */,
+				52337FA62A73FA0E00F4DBD5 /* CharacterStatic.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -269,6 +278,14 @@
 				52337F9C2A73DFE300F4DBD5 /* Enum+PropertyView.swift */,
 			);
 			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		52337FA52A73F91000F4DBD5 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				52337FA32A73F52E00F4DBD5 /* MockGOTService.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,7 +393,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				52337F522A73C6B400F4DBD5 /* Preview Assets.xcassets in Resources */,
+				52337FA72A73FA0E00F4DBD5 /* CharacterStatic.json in Resources */,
 				52337F4F2A73C6B400F4DBD5 /* Assets.xcassets in Resources */,
+				52337FA22A73F4D300F4DBD5 /* HousesStatic.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52337FA42A73F52E00F4DBD5 /* MockGOTService.swift in Sources */,
 				52337F5C2A73C6B500F4DBD5 /* mhpChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,10 +593,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"mhpChallenge/Preview Content\"";
-				DEVELOPMENT_TEAM = 5L6JF86K4L;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mhpChallenge/Info.plist;
@@ -593,6 +614,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.midhun.mhpChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -605,10 +627,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"mhpChallenge/Preview Content\"";
-				DEVELOPMENT_TEAM = 5L6JF86K4L;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mhpChallenge/Info.plist;
@@ -625,6 +648,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.midhun.mhpChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

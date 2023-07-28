@@ -35,6 +35,10 @@ struct AppConstant {
     struct Image {
         static let house = "house"
     }
+    struct Json {
+        static let houses = "HousesStatic"
+        static let character = "CharacterStatic"
+    }
     
     struct Pagination {
         static let houseList = 20
