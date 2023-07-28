@@ -24,6 +24,10 @@
 		52337F8D2A73CE6600F4DBD5 /* HousesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F8C2A73CE6600F4DBD5 /* HousesListView.swift */; };
 		52337F8F2A73CE9D00F4DBD5 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F8E2A73CE9D00F4DBD5 /* AppConstant.swift */; };
 		52337F912A73D01900F4DBD5 /* HousesListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F902A73D01900F4DBD5 /* HousesListItem.swift */; };
+		52337F962A73DD9E00F4DBD5 /* HouseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F952A73DD9E00F4DBD5 /* HouseDetailView.swift */; };
+		52337F982A73DDAF00F4DBD5 /* HouseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F972A73DDAF00F4DBD5 /* HouseDetailViewModel.swift */; };
+		52337F9A2A73DE0B00F4DBD5 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F992A73DE0B00F4DBD5 /* Extension+String.swift */; };
+		52337F9D2A73DFE300F4DBD5 /* Enum+PropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F9C2A73DFE300F4DBD5 /* Enum+PropertyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		52337F8C2A73CE6600F4DBD5 /* HousesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesListView.swift; sourceTree = "<group>"; };
 		52337F8E2A73CE9D00F4DBD5 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		52337F902A73D01900F4DBD5 /* HousesListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesListItem.swift; sourceTree = "<group>"; };
+		52337F952A73DD9E00F4DBD5 /* HouseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailView.swift; sourceTree = "<group>"; };
+		52337F972A73DDAF00F4DBD5 /* HouseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewModel.swift; sourceTree = "<group>"; };
+		52337F992A73DE0B00F4DBD5 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		52337F9C2A73DFE300F4DBD5 /* Enum+PropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum+PropertyView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +126,9 @@
 			isa = PBXGroup;
 			children = (
 				52337F792A73C82300F4DBD5 /* Info.plist */,
-				52337F8E2A73CE9D00F4DBD5 /* AppConstant.swift */,
+				52337F9E2A73E0AF00F4DBD5 /* Utilities */,
+				52337F9F2A73E0BB00F4DBD5 /* Extensions */,
+				52337FA02A73E0C900F4DBD5 /* Enumerations */,
 				52337F892A73CE0F00F4DBD5 /* Resources */,
 				52337F782A73C7E700F4DBD5 /* Config */,
 				52337F802A73C9BB00F4DBD5 /* Repository */,
@@ -223,8 +233,42 @@
 			isa = PBXGroup;
 			children = (
 				52337F922A73DC1600F4DBD5 /* HousesList */,
+				52337F9B2A73DFAD00F4DBD5 /* HouseDetail */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		52337F9B2A73DFAD00F4DBD5 /* HouseDetail */ = {
+			isa = PBXGroup;
+			children = (
+				52337F952A73DD9E00F4DBD5 /* HouseDetailView.swift */,
+				52337F972A73DDAF00F4DBD5 /* HouseDetailViewModel.swift */,
+			);
+			path = HouseDetail;
+			sourceTree = "<group>";
+		};
+		52337F9E2A73E0AF00F4DBD5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				52337F8E2A73CE9D00F4DBD5 /* AppConstant.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		52337F9F2A73E0BB00F4DBD5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52337F992A73DE0B00F4DBD5 /* Extension+String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		52337FA02A73E0C900F4DBD5 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				52337F9C2A73DFE300F4DBD5 /* Enum+PropertyView.swift */,
+			);
+			path = Enumerations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,12 +406,16 @@
 				52337F7F2A73C8F300F4DBD5 /* ApiEndpoints.swift in Sources */,
 				52337F8F2A73CE9D00F4DBD5 /* AppConstant.swift in Sources */,
 				52337F912A73D01900F4DBD5 /* HousesListItem.swift in Sources */,
+				52337F9A2A73DE0B00F4DBD5 /* Extension+String.swift in Sources */,
 				52337F822A73CD0A00F4DBD5 /* GOTService.swift in Sources */,
 				52337F772A73C72400F4DBD5 /* Configuration.swift in Sources */,
 				52337F872A73CDA600F4DBD5 /* CharacterModel.swift in Sources */,
 				52337F4B2A73C6B200F4DBD5 /* mhpChallengeApp.swift in Sources */,
+				52337F962A73DD9E00F4DBD5 /* HouseDetailView.swift in Sources */,
 				52337F8D2A73CE6600F4DBD5 /* HousesListView.swift in Sources */,
 				52337F7D2A73C8E100F4DBD5 /* Endpoint.swift in Sources */,
+				52337F982A73DDAF00F4DBD5 /* HouseDetailViewModel.swift in Sources */,
+				52337F9D2A73DFE300F4DBD5 /* Enum+PropertyView.swift in Sources */,
 				52337F8B2A73CE5A00F4DBD5 /* HousesListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

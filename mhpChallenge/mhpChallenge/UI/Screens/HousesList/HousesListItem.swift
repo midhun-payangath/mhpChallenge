@@ -26,7 +26,7 @@ struct HousesListItem: View {
 extension HousesListItem {
     
     @ViewBuilder
-    var IconView: some View {
+    private var IconView: some View {
         Image(AppConstant.Image.house)
             .resizable()
             .aspectRatio(contentMode: .fit)
@@ -34,7 +34,7 @@ extension HousesListItem {
     }
     
     @ViewBuilder
-    var homeNameView: some View {
+    private var homeNameView: some View {
         if let name  = house.name {
             Text(name)
                 .font(.subheadline)
@@ -42,7 +42,7 @@ extension HousesListItem {
     }
     
     @ViewBuilder
-    var regionNameView: some View {
+    private var regionNameView: some View {
         if let region  = house.region {
             Text(region)
                 .font(.footnote)

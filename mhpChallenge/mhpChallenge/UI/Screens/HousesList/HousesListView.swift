@@ -18,8 +18,10 @@ struct HousesListView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.state.houses, id: \.self) { movie in
-                        HousesListItem(house: movie)
+                ForEach(viewModel.state.houses, id: \.self) { house in
+                    NavigationLink(destination: HouseDetailView(id: house.url?.lastPathComponent ?? "")) {
+                        HousesListItem(house: house)
+                    }
                 }
                 if viewModel.state.canLoadNextPage {
                     Button(action: {
