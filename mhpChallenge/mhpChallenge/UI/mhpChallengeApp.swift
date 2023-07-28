@@ -11,7 +11,7 @@ import SwiftUI
 struct mhpChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HousesListView()
         }
     }
 }

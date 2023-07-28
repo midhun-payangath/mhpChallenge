@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		52337F4B2A73C6B200F4DBD5 /* mhpChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F4A2A73C6B200F4DBD5 /* mhpChallengeApp.swift */; };
-		52337F4D2A73C6B200F4DBD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F4C2A73C6B200F4DBD5 /* ContentView.swift */; };
 		52337F4F2A73C6B400F4DBD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52337F4E2A73C6B400F4DBD5 /* Assets.xcassets */; };
 		52337F522A73C6B400F4DBD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52337F512A73C6B400F4DBD5 /* Preview Assets.xcassets */; };
 		52337F5C2A73C6B500F4DBD5 /* mhpChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F5B2A73C6B500F4DBD5 /* mhpChallengeTests.swift */; };
 		52337F662A73C6B500F4DBD5 /* mhpChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F652A73C6B500F4DBD5 /* mhpChallengeUITests.swift */; };
 		52337F682A73C6B500F4DBD5 /* mhpChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F672A73C6B500F4DBD5 /* mhpChallengeUITestsLaunchTests.swift */; };
 		52337F772A73C72400F4DBD5 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F762A73C72400F4DBD5 /* Configuration.swift */; };
+		52337F7B2A73C8BA00F4DBD5 /* ApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F7A2A73C8BA00F4DBD5 /* ApiRepository.swift */; };
+		52337F7D2A73C8E100F4DBD5 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F7C2A73C8E100F4DBD5 /* Endpoint.swift */; };
+		52337F7F2A73C8F300F4DBD5 /* ApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F7E2A73C8F300F4DBD5 /* ApiEndpoints.swift */; };
+		52337F822A73CD0A00F4DBD5 /* GOTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F812A73CD0A00F4DBD5 /* GOTService.swift */; };
+		52337F852A73CD7F00F4DBD5 /* HouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F842A73CD7F00F4DBD5 /* HouseModel.swift */; };
+		52337F872A73CDA600F4DBD5 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F862A73CDA600F4DBD5 /* CharacterModel.swift */; };
+		52337F8B2A73CE5A00F4DBD5 /* HousesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F8A2A73CE5A00F4DBD5 /* HousesListViewModel.swift */; };
+		52337F8D2A73CE6600F4DBD5 /* HousesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F8C2A73CE6600F4DBD5 /* HousesListView.swift */; };
+		52337F8F2A73CE9D00F4DBD5 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F8E2A73CE9D00F4DBD5 /* AppConstant.swift */; };
+		52337F912A73D01900F4DBD5 /* HousesListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52337F902A73D01900F4DBD5 /* HousesListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +46,6 @@
 /* Begin PBXFileReference section */
 		52337F472A73C6B200F4DBD5 /* mhpChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mhpChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52337F4A2A73C6B200F4DBD5 /* mhpChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mhpChallengeApp.swift; sourceTree = "<group>"; };
-		52337F4C2A73C6B200F4DBD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		52337F4E2A73C6B400F4DBD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52337F512A73C6B400F4DBD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		52337F572A73C6B500F4DBD5 /* mhpChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mhpChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +57,16 @@
 		52337F752A73C71600F4DBD5 /* RELEASE.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RELEASE.xcconfig; sourceTree = "<group>"; };
 		52337F762A73C72400F4DBD5 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		52337F792A73C82300F4DBD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		52337F7A2A73C8BA00F4DBD5 /* ApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRepository.swift; sourceTree = "<group>"; };
+		52337F7C2A73C8E100F4DBD5 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		52337F7E2A73C8F300F4DBD5 /* ApiEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoints.swift; sourceTree = "<group>"; };
+		52337F812A73CD0A00F4DBD5 /* GOTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOTService.swift; sourceTree = "<group>"; };
+		52337F842A73CD7F00F4DBD5 /* HouseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseModel.swift; sourceTree = "<group>"; };
+		52337F862A73CDA600F4DBD5 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		52337F8A2A73CE5A00F4DBD5 /* HousesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesListViewModel.swift; sourceTree = "<group>"; };
+		52337F8C2A73CE6600F4DBD5 /* HousesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesListView.swift; sourceTree = "<group>"; };
+		52337F8E2A73CE9D00F4DBD5 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		52337F902A73D01900F4DBD5 /* HousesListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +118,13 @@
 			isa = PBXGroup;
 			children = (
 				52337F792A73C82300F4DBD5 /* Info.plist */,
-				52337F4A2A73C6B200F4DBD5 /* mhpChallengeApp.swift */,
-				52337F4C2A73C6B200F4DBD5 /* ContentView.swift */,
+				52337F8E2A73CE9D00F4DBD5 /* AppConstant.swift */,
+				52337F892A73CE0F00F4DBD5 /* Resources */,
 				52337F782A73C7E700F4DBD5 /* Config */,
-				52337F4E2A73C6B400F4DBD5 /* Assets.xcassets */,
+				52337F802A73C9BB00F4DBD5 /* Repository */,
+				52337F832A73CD3A00F4DBD5 /* Services */,
+				52337F882A73CDC600F4DBD5 /* Model */,
+				52337F932A73DC3E00F4DBD5 /* UI */,
 				52337F502A73C6B400F4DBD5 /* Preview Content */,
 			);
 			path = mhpChallenge;
@@ -142,6 +163,68 @@
 				52337F762A73C72400F4DBD5 /* Configuration.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		52337F802A73C9BB00F4DBD5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				52337F7A2A73C8BA00F4DBD5 /* ApiRepository.swift */,
+				52337F7C2A73C8E100F4DBD5 /* Endpoint.swift */,
+				52337F7E2A73C8F300F4DBD5 /* ApiEndpoints.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		52337F832A73CD3A00F4DBD5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				52337F812A73CD0A00F4DBD5 /* GOTService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		52337F882A73CDC600F4DBD5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52337F842A73CD7F00F4DBD5 /* HouseModel.swift */,
+				52337F862A73CDA600F4DBD5 /* CharacterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52337F892A73CE0F00F4DBD5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52337F4E2A73C6B400F4DBD5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		52337F922A73DC1600F4DBD5 /* HousesList */ = {
+			isa = PBXGroup;
+			children = (
+				52337F902A73D01900F4DBD5 /* HousesListItem.swift */,
+				52337F8C2A73CE6600F4DBD5 /* HousesListView.swift */,
+				52337F8A2A73CE5A00F4DBD5 /* HousesListViewModel.swift */,
+			);
+			path = HousesList;
+			sourceTree = "<group>";
+		};
+		52337F932A73DC3E00F4DBD5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				52337F4A2A73C6B200F4DBD5 /* mhpChallengeApp.swift */,
+				52337F942A73DC4A00F4DBD5 /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		52337F942A73DC4A00F4DBD5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				52337F922A73DC1600F4DBD5 /* HousesList */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,9 +357,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52337F852A73CD7F00F4DBD5 /* HouseModel.swift in Sources */,
+				52337F7B2A73C8BA00F4DBD5 /* ApiRepository.swift in Sources */,
+				52337F7F2A73C8F300F4DBD5 /* ApiEndpoints.swift in Sources */,
+				52337F8F2A73CE9D00F4DBD5 /* AppConstant.swift in Sources */,
+				52337F912A73D01900F4DBD5 /* HousesListItem.swift in Sources */,
+				52337F822A73CD0A00F4DBD5 /* GOTService.swift in Sources */,
 				52337F772A73C72400F4DBD5 /* Configuration.swift in Sources */,
-				52337F4D2A73C6B200F4DBD5 /* ContentView.swift in Sources */,
+				52337F872A73CDA600F4DBD5 /* CharacterModel.swift in Sources */,
 				52337F4B2A73C6B200F4DBD5 /* mhpChallengeApp.swift in Sources */,
+				52337F8D2A73CE6600F4DBD5 /* HousesListView.swift in Sources */,
+				52337F7D2A73C8E100F4DBD5 /* Endpoint.swift in Sources */,
+				52337F8B2A73CE5A00F4DBD5 /* HousesListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
